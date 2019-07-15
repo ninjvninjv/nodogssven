@@ -1,11 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NoDogs</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
-  <body>
-    <h1>NoDogs</h1>
-  </body>
+<html>
+
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <!--ignore this two lines*/-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+        <!--change the title to the name of your dog*/-->
+        <title>NoDogs</title>
+    
+    </head>
+    
+    
+    <body>
+        
+        
+        <div id="avocado">
+                <span id="a">A</span><span id="a">V</span><span id="a">O</span><span id="a">C</span><span id="a">A</span><span id="a">D</span><span id="a">O</span>
+            </div>
+       
+        
+        <div id="alles">
+            
+            <div class="importantthings">
+        
+            
+                
+                
+            
+        </div>
+        
+            <svg viewBox="0 0 2500 600" height='250vh'>
+            
+            <path id="curve" fill="none" stroke="none" d="M 5 400 Q 75 475 125 375 Q 150 325 225 325 Q 300 325 350 400 Q 425 500 650 450 Q 750 425 825 325 Q 950 200 1125 325 Q 1225 400 1300 325 Q 1450 175 1650 350 Q 1750 425 1850 375 Q 1975 300 2100 400 Q 2225 525 2300 350 Q 2350 225 2450 250 Q 2575 275 2600 400 Q 2625 475 2700 475 " />
+            
+                <text >
+                    
+                    <textPath alignment-baseline="top" xlink:href="#curve" id="curvetext" style="color: blue">
+                        Last time when I have been in the park together with my tiny and playful best buddy. I lost him after accidentally throwing his favorite neon green Frisbee into the river. The Frisbee was just floating down the river and didn’t stop. Avocado was just running and running along the river always having an eye on the Frisbee. After 1 hour running behind him I just couldn`t go further because of a fence so I had to stop. I just searched the neighborhood for hours but I couldn`t find him anymore and he did not come back so far. No I`m just so worried about my sweet and funny Avocado. So if you have seen a small and playful Jack Russel Terrier called Avocado that loves eating Sucuk, Haribo or Pineapple and hates to see people cry please call or text me!
+                    </textPath>
+                </text>
+        </svg>
+        
+        </div>
+        
+        
+    
+    </body>
+    
+    
+    <style>
+        
+        
+        body {
+           
+            cursor: url(Frisbee.png), auto;  
+            height:100vh;
+            width: 2000px;
+            overflow-y: hidden;
+            
+            font-family: 'buckleregular';
+            
+            background-color:ghostwhite;
+        }
+        
+@font-face {
+    font-family: 'buckleregular';
+    src: url('Fonts/buckle-regular-webfont.woff2') format('woff2'),
+         url('Fonts/buckle-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    
+        .importantthings{
+        
+            font-family: 'buckleregular';
+            font-size: 4vw;
+            font-kerning:normal;
+            
+            text-align: ;
+            text-transform: uppercase;
+            text-overflow: ;
+            text-shadow: 0 0 4px black;
+            
+            transform: scaleX(5);
+            transform: scaleY(1);
+            transform: ;
+            
+            color: saddlebrown;
+            
+            white-space: ;
+            
+            
+        }
+        
+        #curvetext {
+            font-family: 'buckleregular';
+            font-size: 7.5px;
+        }
+        
+        svg {
+            fill:blue;
+            transform: translateY(-100vh) ;
+            
+            cursor: url(Frisbee.png), auto;
+        }
+        
+        #alles {
+            height: 100vh;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            cursor: url(Frisbee.png), auto; 
+        }
+        
+        #avocado{
+            
+            position:fixed;
+            top:100px;
+            left:100px;
+            font-size: 90pt;
+            
+        }
+        
+        #a{
+            
+            
+        }
+        
+        #a:hover{
+            position:relative;
+            top:-20px;
+            height:calc(auto + 20px);
+            
+        }
+        
+    </style>
+    
+    
+    <script>
+        
+        //This means, everything inside this brackets will be called directly, when the document is open
+        $(document).ready(function(){
+
+            //get the height of the window and the width of the <body> for using them in your function
+            var h = $(window).height();
+            var w = $('body').width();
+
+            //This means, that the function will be called, when '.text' is clicked
+            $('.text').on('click',function(){
+            
+            
+            });
+            
+            //this function will be called every time the mouse moves
+            $(document).mousemove(function(){
+                $("body").css("cursor", "cursor: url(Frisbee.png), auto;")
+                
+            });
+            
+            //everything inside this brackets happens, when you resize the browser window
+            $(window).resize(function(){
+
+
+            });
+            
+            //This means, that the function will be called, when '.text' is clicked
+            
+            
+            //this function will be called every time the mouse moves
+            $('body').mousemove(function(e){
+
+                    //saves the x- and y-coordinate in two variables
+                    var x =e.pageX;
+                    var y =e.pageY;
+
+                    $('.text').css({'font-size': y + x}); 
+                    $('#text2').css({'color': "rgb(" + (x - y) + "," + y + "," + x + ")"});
+                
+                });
+            
+        });
+            
+            
+        //This means, that the loop is doing '<p>snoop dogg</p>' inside the bracket ten times
+        for(i=0; i<10; i++){ 
+                
+                
+                
+            }
+    
+    </script>
+    
 </html>
